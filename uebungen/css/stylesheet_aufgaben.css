@@ -1,0 +1,16 @@
+h1{
+    color: rgb(81, 96, 23);
+        background-color: transparent;
+  }
+.listen {
+        background-color: transparent;
+        }
+p   {
+    font-size: 1.5em;
+    color: #335823;
+    background-image: none;
+    background-color: transparent;
+    }
+div {
+    background-image: url("/matwebdev/bilder/DCI_COLORS_June24_logo_wordmark_blue.svg");
+    }
