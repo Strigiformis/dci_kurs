@@ -1,16 +1,73 @@
-h1{
-    color: rgb(81, 96, 23);
-        background-color: transparent;
-  }
-.listen {
-        background-color: transparent;
-        }
-p   {
-    font-size: 1.5em;
-    color: #335823;
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url("/uebungen/bilder/programming-7649719_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(39, 39, 29);
+    background-color: transparent;
+}
+
+p {
+    font-size: 14px;
+    color: #000000;
     background-image: none;
     background-color: transparent;
-    }
-div {
-    background-image: url("/matwebdev/bilder/DCI_COLORS_June24_logo_wordmark_blue.svg");
-    }
+}
+
+#wand {
+    background-image: url("/uebungen/bilder/istockphoto-wand-grün.jpg");
+}
+
+#buttons li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    background-color: #979797;
+    margin-right: 40px;
+    width: 150px;
+    line-height: 44px;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 15%;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#buttons li a {
+    text-decoration: none;
+    color: #191111;
+    display: block;
+   
+}
+#buttons li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #7c9556;
+    border-radius: 8px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#buttons li:active {
+    transform: translateY(4px);
+}
+#budis {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  #vid1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    widows: 50%;
+  }
