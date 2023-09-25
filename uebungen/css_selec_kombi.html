@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selektoren und Kombinatoren</title>
+    <link rel="stylesheet" href="/uebungen/css/selektoren.css">
+</head>
+<body>
+    <h1>CSS-Selektoren und Kombinatoren</h1>
+    <!--HTML article sind Blöcke mit Inhalten, die für sich allein stehen könnten. section fasst zusammengehörende Inhalte zusammen und bildet einen semantischen Block, der einen eigenen header, Inhalt und footer haben kann. In jedem section-Element können Überschriften von h1 bis h6 liegen, aber Sections können nicht allein für sich stehen.-->
+    <!--article, section und nav bilden die Struktur einer Webseite ähnlich wie das Inhaltsverzeichnis eines Sachbuchs in hierarchische Kapitel ab.
+    Für die Semantik der HTML-Seite stehen header, main und footer zur Verfügung.-->
+<section>
+        <article>
+        <h2>Kapitelüberschrift in der section</h2>
+        <p class="p_form">Text als Nachfahre der section, mit Verweis auf p_form als Stylevorlage (class=".p_form").</p>
+        <p>Text als Nachfahre der section. Angesteuert mit section>p.</p>
+        <p id="p_form2">Text als Nachfahre der section mit Verweis auf p_form2 als Stylevorlage (id="p_form2").</p>
+    </article>
+    <!--nachfolgend Kindelement-->
+    <p>Text als Kindelement.</p>
+</section>
+<h2>Kapitelüberschrift außerhalb der section</h2>
+    <p>Text im Body</p>
+    <p class="p_form">Text im Body, mit Verweis auf p_form als Stylevorlage(class=".p_form").</p>
+    <p id="p_form2">Text im Body, mit Verweis auf p_form2 als Stylevorlage. Hier mit einem eindeutigen Marker(id).</p>
+    </body>
+</html>

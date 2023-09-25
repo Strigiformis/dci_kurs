@@ -1,0 +1,26 @@
+p {
+    font-size: 24px;
+}
+h1 {
+
+}
+h2 {
+
+}
+section h2 {
+    color: blueviolet;
+}
+/*Nachfahren*/
+section p {
+    color: brown;
+}
+/*Kinder von section*/
+section>p {
+    color: rgb(68, 173, 85);
+}
+.p_form {
+    color: crimson;
+}
+#p_form2 {
+    color: chartreuse;
+}

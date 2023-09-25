@@ -1,35 +1,41 @@
-*{
-    padding: 0;
-    margin: 0;
-}
 html{
     height: 100%;
 }
 body{
     height: 100%;
     background-image: url("/uebungen/bilder/programming-7649719_1280.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
+/* Texte und Schriften */
 h1 {
     font-family: sans-serif;
     font-weight: 600;
     text-align: center;
-    color: rgb(39, 39, 29);
+    color: rgb(231, 242, 243);
     background-color: transparent;
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     color: #000000;
     background-image: none;
     background-color: transparent;
 }
 
-#wand {
-    background-image: url("/uebungen/bilder/istockphoto-wand-grün.jpg");
+p.textvariante1 {
+    font-size: 20px;
+    color: cadetblue;
 }
 
+p.textvariante2 {
+    font-size: 30px;
+    color: burlywood;
+}
+
+/* Design Buttons */
 #buttons li {
     float: left;
     list-style: none;
@@ -51,11 +57,12 @@ p {
     display: block;
    
 }
+
 #buttons li a:hover {
     text-decoration: none;
     color: #000000;
     background-color: #7c9556;
-    border-radius: 8px;
+    border-radius: 15%;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 #buttons li:active {
@@ -65,7 +72,7 @@ p {
     opacity: 0.3;
     cursor: not-allowed;
   }
-  #vid1 {
+#vid1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
