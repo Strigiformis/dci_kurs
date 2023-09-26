@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@1,200&display=swap');
 
 * {
+    font-size: 16px;
     font-family: 'Aleo', serif;
     line-height: 120%;
 }
 
 html {
-    font-size: 100%;
-    text-align: center;
+     text-align: center;
 }
   
 h1 {
@@ -170,4 +170,26 @@ p {
 }
 #buttons li:active {
     transform: translateY(4px);
+}
+
+#whattsapp {
+    color: #48018a;
+    font-size: 500%;
+}
+
+#github {
+    font-size: 300%;
+}
+
+#loesbutton {
+    float: left;
+    text-align: center;
+    background-color: #979797;
+    margin-right: auto;
+    width: 150px;
+    line-height: 44px;
+    font-size: 16px;
+    border-radius: 15%;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
