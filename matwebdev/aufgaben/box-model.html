@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
 
+<!--4 - CSS Box Model - Erstelle eine Datei names box-model.html und füge die HTML-Grundstruktur hinzu. Füge 3 sections hinzu und füge in jeder section 2 Paragraphen ein. Füge ein internes Stylesheet ein. Gib den sections unterschiedliche margins, borders und paddings. Die Paragraphen sollten ihre eigenen borders haben, halb so groß (in der Breite) wie die sections sein und innerhalb der sections horizontal zentriert werden.-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +12,19 @@
             background-color: #778899
         }
 
-        h1, h2 {
+        h1 {
             text-align: center;
         }
 
         section>p {
             border: 10px solid rgb(78, 112, 88);
             max-width: 50%;
+            margin: 10px;
+            padding: 20px;
             margin-left: auto;
-            margin-right: auto ;       
+            margin-right: auto;
+            border-radius: 25px;
+            background-color: cadetblue;
         }
 
         .boxvar1 {
@@ -26,46 +32,43 @@
             border: 15px solid rgb(124, 101, 38);
             padding: 10px;
             margin: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: rgb(128, 128, 128, 0.5)
+            margin-left: 200px;
+            background-color: rgba(76, 129, 98, 0.5)
         }
 
         .boxvar2 {
-            width: 650px;
-            border: 4px dashed rgb(190, 165, 81);
+            width: 850px;
+            border: 4px dotted rgb(190, 165, 81);
             padding: 30px;
             margin: 30px;
             margin-left: auto;
             margin-right: auto;
+            border-radius: 25%;
+            background-color: steelblue;
         }
 
         .boxvar3 {
             width: 450px;
-            border: 20px solid rgb(56, 88, 66);
-            padding: 40px;
+            border: 20px dashed rgb(93, 25, 124);
+            padding: 80px;
             margin: 40px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: rgb(128, 128, 128, 0.5)
+            margin-left: 600px;
+            background-color: rgba(48, 48, 48, 0.5);
+            border-radius: 10em;
         }
     </style>
-    <!--4 - CSS Box Model - Erstelle eine Datei names box-model.html und füge die HTML-Grundstruktur hinzu. Füge 3 sections hinzu und füge in jeder section 2 Paragraphen ein
-    Füge ein internes Stylesheet ein.
-    Gib den sections unterschiedliche margins, borders und paddings. Die Paragraphen sollten ihre eigenen borders haben, halb so groß (in der Breite) wie die sections sein und innerhalb der sections horizontal zentriert werden.
--->
 </head>
 
 <body>
     <h1>CSS Box Model</h1><br>
-    <h2>Box Variante 1</h2>
+
     <section class="boxvar1">
         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
             texts.</p>
         <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small
             river named Duden</p>
     </section>
-    <h2>Box Variante 2</h2>
+    <br>
     <section class="boxvar2">
         <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I
             enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for
@@ -74,7 +77,7 @@
             horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
             belly,</p>
     </section>
-    <h2>Box Variante 3</h2>
+    <br>
     <section class="boxvar3">
         <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox
             whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab</p>
@@ -82,6 +85,8 @@
             music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their
             pronunciation and their most common words. Everyone</p>
     </section>
+
+    <footer><a class="astyle1" href="start">Zum Seitenbegin</a></footer>
 </body>
 
 </html>
