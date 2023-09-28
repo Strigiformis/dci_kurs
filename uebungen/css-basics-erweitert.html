@@ -7,6 +7,8 @@
     <title>CSS-Basics</title>
     <link rel="stylesheet" href="/uebungen/css/stylesheet_ccs_basics_erweitert.css">
 
+    <link rel="stylesheet" href="/uebungen/css/stylepseudo.css">
+
     <!--3 - CSS Basics - DEUTSCH
         Erstelle eine Datei mit dem Namen css-basics.html im Ordner "aufgaben". Diese Datei sollte die grundlegende HTML-Struktur enthalten. Füge 3 sections hinzu und füge in jedem dieser Abschnitte 2 Paragraphen ein.Füge ein internes Stylesheet ein.
         Gestalte deine Website sinnvoll und nach Belieben.
@@ -14,11 +16,14 @@
 
 </head>
 
-<body>
+<bod>
 
     <head>
-        <a href="https://digitalcareerinstitute.org/" target="_blank" rel="noopener noreferrer" class="btn"
-            data-v-e7bde830="">Zur DCI Webseite</a>
+        <nav>
+            <a href="/matwebdev/aufgaben/html-dokument.html">Erste Aufgabe</a>
+            <a href="/matwebdev/aufgaben/list.html">Zweite Aufgabe</a>
+            <a href="/matwebdev/aufgaben/form.html">Dritte Aufgabe</a>
+        </nav>
     </head>
     <h1>Unsere ersten drei Pflichtaufgaben im Überblick</h1>
     <br><br>
@@ -31,8 +36,7 @@
                 entsprechend deines Themas. Füge die wichtigste Überschrift und zwei kurze Absätze ein.</p>
             <p class="p_color">Füge unterhalb der Absätze einen Link zu einer Website mit Bezug zu deinem Thema ein und
                 oberhalb der Absätze ein Bild, das mit deinem Thema in Verbindung steht.</p>
-            <a id="loesbutton" href="/matwebdev/aufgaben/html-dokument.html">Zur Lösung</a>
-            <ion-icon id="github" name="logo-github"></ion-icon>
+            <a id="linkbutton" href="/matwebdev/aufgaben/html-dokument.html">Zur Lösung</a>
 
         </div>
     </section>
@@ -94,11 +98,18 @@
     </section>
     <ion-icon id="whattsapp" name="logo-whatsapp"></ion-icon>
     <br>
-    <footer>
-        <a href="/uebungen/dci_aufgaben.html">Link zu meinen eingereichten Aufgaben. Noch nicht so ganz fertig;)</a>
-    </footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <section id="no1">
+        <p>Textelement innerhalb section mit id=no1, angesteuert mit section#no1 p</p>
+        <p>Zweites Textelement innerhalb section mit id=no1</p>
+    </section>
+    <p>Textelement nach der section mit id=no1</p>
+
+<section>
+    <p>Section ohne Zuordnung</p>
+</section>
+
+
+
 </body>
 
 </html>

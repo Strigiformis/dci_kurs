@@ -1,0 +1,14 @@
+table, td, th {
+    border: 2px solid chocolate;
+    color: blue;
+}
+
+td:nth-child(2) {
+    background-color: coral;
+}
+
+tr:nth-child(2) {
+    background-color: aquamarine;
+}
+/*td überschreibt tr*/
+
