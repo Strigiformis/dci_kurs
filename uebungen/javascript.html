@@ -10,6 +10,12 @@
     <h1>Javascript Beispiele</h1>
     <h2></h2>
     <p id="color"></p>
+    <p id="ergebnis"></p>
+    <img
+      src="/matwebdev/bilder/btn_google_signin_light_normal_web.png"
+      alt=""
+    />
+
     <!--
     <script>
       // Variablen deklarieren, Datentyp, Textausgabe //
@@ -26,17 +32,30 @@
       var farben = ["red", "green", "blue", "grey"];
       console.log(farben[0]); //Objekt//
       ////
-      var welcome = document.querySelector("h2");
-      welcome.innerHTML = text + username;
-      welcome.style.color = farben[1];
+      
         </script>
     -->
 
     <script>
+      var text = "Hallo ";
+      //var username = prompt("Bitte gib deinen Namen ein:");
+      var quadrat = prompt("Gib bitte eine Zahl ein:");
+      ergebnis.innerHTML = quadrat * quadrat;
+      //var welcome = document.querySelector("h2");
+      welcome.innerHTML = text + username;
+      welcome.style.color = farben[1];
       var farben = ["red", "green", "blue", "grey"];
       for (var i = 0; i < farben.length; i++) {
         document.getElementById("color").textContent += farben[i] + " ";
       }
+      //
+      //
+      var bild = document.querySelector("img");
+      bild.addEventListener("click", bildtausch);
+      function bildtausch() {
+         if (bild.getAttribute('src') == '/matwebdev/bilder/btn_google_signin_light_normal_web.png')
+            bild.src='/matwebdev/bilder/btn_google_signin_dark_normal_web.png';
+        } else { bild.src='/matwebdev/bilder/btn_google_signin_light_normal_web.png'); }
     </script>
   </body>
 </html>
