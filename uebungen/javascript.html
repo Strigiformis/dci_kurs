@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+
+  <body>
+    <h1>Javascript Beispiele</h1>
+    <h2></h2>
+    <p id="color"></p>
+    <!--
+    <script>
+      // Variablen deklarieren, Datentyp, Textausgabe //
+      var text = "Hallo "; //String//
+      console.log(text, typeof text);
+      var username = prompt("Bitte gib deinen Namen ein:"); //String//
+      console.log(username, typeof username);
+      ////
+      var zahl1 = 7; //Number ff//
+      var zahl2 = 8.5;
+      var summe = zahl1 + zahl2;
+      console.log(summe);
+      ////
+      var farben = ["red", "green", "blue", "grey"];
+      console.log(farben[0]); //Objekt//
+      ////
+      var welcome = document.querySelector("h2");
+      welcome.innerHTML = text + username;
+      welcome.style.color = farben[1];
+        </script>
+    -->
+
+    <script>
+      var farben = ["red", "green", "blue", "grey"];
+      for (var i = 0; i < farben.length; i++) {
+        document.getElementById("color").textContent += farben[i] + " ";
+      }
+    </script>
+  </body>
+</html>
