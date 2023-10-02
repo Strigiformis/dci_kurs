@@ -3,59 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript</title>
+    <link rel="stylesheet" href="/uebungen/css/style.css" />
+    <title>CSS Background Cover</title>
   </head>
 
   <body>
-    <h1>Javascript Beispiele</h1>
-    <h2></h2>
-    <p id="color"></p>
-    <p id="ergebnis"></p>
-    <img
-      src="/matwebdev/bilder/btn_google_signin_light_normal_web.png"
-      alt=""
-    />
+    <span class="headerbox">
+      <header class="header_text">
+        <h1 class="type-text">Irgendwas mit Internet oder so..</h1>
+        <nav>
+          <ul id="navbuttons_start">
+            <li class="type-text" id="startlist">
+              <a href="/matwebdev/aufgaben/css-basics.html">
+                Hier sollte jetzt etwas geschrieben stehen</a
+              >
+            </li>
+            <li class="type-text">Und hier der zweite Menüpunkt</li>
+            <li class="type-text">Der dritte</li>
+            <li class="type-text">Ihr kennt es...</li>
+          </ul>
+        </nav>
+      </header>
 
-    <!--
-    <script>
-      // Variablen deklarieren, Datentyp, Textausgabe //
-      var text = "Hallo "; //String//
-      console.log(text, typeof text);
-      var username = prompt("Bitte gib deinen Namen ein:"); //String//
-      console.log(username, typeof username);
-      ////
-      var zahl1 = 7; //Number ff//
-      var zahl2 = 8.5;
-      var summe = zahl1 + zahl2;
-      console.log(summe);
-      ////
-      var farben = ["red", "green", "blue", "grey"];
-      console.log(farben[0]); //Objekt//
-      ////
-      
-        </script>
-    -->
-
-    <script>
-      var text = "Hallo ";
-      //var username = prompt("Bitte gib deinen Namen ein:");
-      var quadrat = prompt("Gib bitte eine Zahl ein:");
-      ergebnis.innerHTML = quadrat * quadrat;
-      //var welcome = document.querySelector("h2");
-      welcome.innerHTML = text + username;
-      welcome.style.color = farben[1];
-      var farben = ["red", "green", "blue", "grey"];
-      for (var i = 0; i < farben.length; i++) {
-        document.getElementById("color").textContent += farben[i] + " ";
-      }
-      //
-      //
-      var bild = document.querySelector("img");
-      bild.addEventListener("click", bildtausch);
-      function bildtausch() {
-         if (bild.getAttribute('src') == '/matwebdev/bilder/btn_google_signin_light_normal_web.png')
-            bild.src='/matwebdev/bilder/btn_google_signin_dark_normal_web.png';} 
-        } else { bild.src='/matwebdev/bilder/btn_google_signin_light_normal_web.png'); }
-    </script>
+      <video
+        autoplay
+        muted
+        loop
+        poster="/uebungen/bilder/vecteezy_television-static-no-signal-old-vintage-tv-noise-on-analog_9296826_787.mp4"
+        id="crtbackground"
+      >
+        <source
+          src="/uebungen/bilder/vecteezy_television-static-no-signal-old-vintage-tv-noise-on-analog_9296826_787.mp4"
+        />
+      </video>
+    </span>
+    <p class="type-text">TEST</p>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
