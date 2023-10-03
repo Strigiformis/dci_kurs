@@ -5,22 +5,25 @@ body {
 }
 
 a {
+  color: #a7a7a7dc;
 }
 
 a:link {
-  color: #7e7e7e;
+  color: #7e7e7edc;
 }
 
 h1 {
+  color: rgb(255, 119, 7);
   text-align: center;
   margin-top: 2em;
+  font-size: 45px;
 }
 .navbar {
   width: 100vw;
   overflow: auto;
   margin-top: 40px;
   padding-left: 20px;
-  background-color: #f8f8f841;
+  background-color: #f8f8f844;
   height: clamp(1em, 3vm, 1.75em);
 }
 
@@ -32,6 +35,8 @@ nav ul {
 
 nav {
   display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
   float: right;
   margin: 0;
 }
@@ -50,17 +55,17 @@ nav a {
 }
 
 nav a:visited {
-  color: #7e7e7e;
+  color: #7e7e7e00;
 }
 
 .indexlink:visited {
-  color: #7e7e7e;
+  color: rgb(126, 126, 126);
 }
 .indexlink:hover {
-  color: #82e2ff;
+  color: rgb(255, 119, 7);
 }
 nav a:hover {
-  color: #82e2ff;
+  color: rgb(255, 119, 7);
 }
 
 nav a:active {
@@ -75,50 +80,12 @@ ion-icon {
   padding-top: 8px;
 }
 ion-icon:hover {
-  color: #82e2ff;
+  color: rgb(255, 119, 7);
 }
 /* DROPDOWN MENUE !!!!!!!
 
-.dropbtn {
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
 
 ENDE DROPDOWN MENUE !!!!!!!!!!*/
 
@@ -158,4 +125,45 @@ video {
 * {
   font-family: "Audiowide", cursive;
   font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
+}
+
+p {
+  color: #8ae4d8ab;
+  margin-left: 20px;
+}
+
+h2 {
+  margin-left: 10px;
+
+  color: rgb(255, 119, 7);
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+}
+
+details {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all 0.5s;
+  border: thick solid #7e7e7e;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+details[open] {
+  transition: all 1s;
+}
+
+details > div {
+  padding: 1em;
+}
+
+summary {
+  color: rgb(255, 119, 7);
+  position: relative;
+  line-height: 300%;
+  padding-left: 1em;
 }
