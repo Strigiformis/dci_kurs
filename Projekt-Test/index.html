@@ -5,25 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekt Startseite</title>
     <link rel="stylesheet" href="/Projekt-Test/css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+    </style>
   </head>
   <body>
     <div class="navbar">
-      <img
-        src="https://code-crowd.de/blog/wp-content/themes/CodeCrowd-Blog/img/logo-programmieren-lernen.svg"
-        alt="logo"
-      />
-
+      <a class="indexlink" href="/Projekt-Test/index.html">
+        <ion-icon name="home-outline"></ion-icon
+      ></a>
+      <a href="/matwebdev/aufgaben/form.html">
+        <ion-icon name="mail-outline"></ion-icon
+      ></a>
       <nav id="navbar">
         <ul>
           <li>
-            <a href="/uebungen/form.html">Home</a>
+            <a href="#">Programmiersprachen</a>
           </li>
           <li><a href="#">Über uns</a></li>
           <li><a href="#">Leistungen</a></li>
           <li><a href="#">FAQ</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li></li>
         </ul>
       </nav>
     </div>
+
+    <!--
+
+-->
+    <video
+      autoplay
+      muted
+      loop
+      poster="/uebungen/bilder/vecteezy_television-static-no-signal-old-vintage-tv-noise-on-analog_9296826_787.mp4"
+      id="crtbackground"
+    >
+      <source
+        src="/uebungen/bilder/vecteezy_television-static-no-signal-old-vintage-tv-noise-on-analog_9296826_787.mp4"
+      />
+    </video>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -4,8 +4,10 @@ body {
 }
 
 .navbar {
-  background-color: #e5e5e5;
-  height: 50px;
+  margin-top: 40px;
+  padding-left: 20px;
+  background-color: #f8f8f841;
+  height: 84px;
 }
 
 .navbar img {
@@ -30,14 +32,26 @@ li {
 }
 
 nav a {
-  text-decoration: none;
-  color: #353535;
-  display: inline-block;
   padding-top: 15px;
+  padding-right: 50px;
+  font-weight: 500;
+  font-size: 48px;
+  text-decoration: none;
+  display: inline-block;
 }
 
+nav a:visited {
+  color: #7e7e7e;
+}
+
+.indexlink:visited {
+  color: #7e7e7e;
+}
+.indexlink:hover {
+  color: #82e2ff;
+}
 nav a:hover {
-  color: #00b2b2;
+  color: #82e2ff;
 }
 
 nav a:active {
@@ -48,6 +62,60 @@ nav a:active {
   display: flexbox;
   position: sticky;
 }
+ion-icon {
+  color: #7e7e7e;
+  font-size: 64px;
+  font-weight: 800;
+  margin-left: 20px;
+  padding-top: 8px;
+}
+ion-icon:hover {
+  color: #82e2ff;
+}
+/* DROPDOWN MENUE !!!!!!!
+
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+ENDE DROPDOWN MENUE !!!!!!!!!!*/
 
 @media screen and (max-width: 700px) {
   nav {
@@ -57,11 +125,27 @@ nav a:active {
 
   nav li {
     display: block;
-    background-color: #e5e5e5;
+    background-color: #7a7a7a;
     text-align: center;
   }
 }
 
 * {
-  font-family: Montserrat, sans-serif;
+  font-family: sans-serif;
+}
+
+/*CRT BACKGROUND !!!!!!!!!!*/
+
+#crtbackground {
+  -webkit-filter: brightness(0.2);
+  filter: brightness(0.2);
+  width: 100vw;
+  height: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
