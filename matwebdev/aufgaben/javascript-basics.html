@@ -1,0 +1,87 @@
+<!--8 - JavaScript Basics - DEUTSCH
+
+Erstelle eine JavaScript-Datei und beantworte darin die folgenden Fragen:
+Was sind die verschiedenen Datentypen in JavaScript?
+Was ist der Unterschied zwischen " == " und " === "?
+Deklariere eine Variable namens userName und weise ihr einen Namen als Wert zu.
+Weise das aktuelle Jahr einer Variablen namens currentYear zu.
+Weise dein Geburtsjahr einer Variablen namens birthYear zu.
+Deklariere eine Variable namens age und berechne dein Alter mit Hilfe der Variablen currentYear und birthYear.
+Logge in die Konsole: "userName ist age Jahre alt"-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basics</title>
+    <style>
+      * {
+        line-height: 120%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I. Die Dateitypen in JavaScript</h1>
+    <p>
+      In JavaScript gibt es sieben verschiedene Datentypen. Ein Datentyp
+      bezeichnet eine bestimmte Menge gleichartiger Werte und legt fest, welche
+      Operationen man mit ihnen ausführen kann. Ein Beispiel dafür ist die Menge
+      aller Zahlen, die JavaScript verarbeiten kann, und mathematischen
+      Operationen wie Addition oder Multiplikation.
+    </p>
+    <p>
+      Ein weiterer Typ wären die Zeichenketten, zum Beispiel "Hallo" und "Welt",
+      mit der Operation Verkettung: "Hallo" + "Welt" ergibt "HalloWelt"
+    </p>
+    <br />
+    <h2>Einfache Dateitypen</h2>
+    <ul>
+      <li>
+        Undefined, keine Wert zugewiesen=wird in JavaScript verwendet um „kein
+        Wert vorhanden“ darzustellen
+      </li>
+      <li>Null</li>
+      <li>Boolean, kann den Wert true oder false haben</li>
+      <li>String, Zeichenkette</li>
+      <li>Symbol, zum Erstellen eines Zugriffschlüssels</li>
+      <li>Number, Zahl</li>
+      <li>BigInt, ganzzahliger Wert</li>
+    </ul>
+    <br />
+    <p>Dateitypen müssen vor Variablen definiert werden!</p>
+    <br />
+    <h2>Spezielle Dateitypen</h2>
+    <ul>
+      <li>
+        Function, ist eine Folge von Anweisungen. Außer die Funktion aufzurufen,
+        kann man einem Funktionsobjekt auch Eigenschaften zuweisen, man kann es
+        in einer Variablen speichern oder als Parameter an andere Funktionen
+        weitergeben. Die Klammern, die in JavaScript einen Funktionsaufruf
+        kennzeichnen, werden Operator genannt.
+      </li>
+      <li>Array</li>
+      <!--eine Sammlung von Werten, auf die mit einem ganzzahligen Index zugegriffen werden kann. Arrays haben eine length Eigenschaft, die automatisch den Wert des höchsten genutzten Index plus eins darstellt, ansonsten verhalten sie sich wie normale Objekte.-->
+    </ul>
+    <br />
+    <h2>Was ist der Unterschied zwischen " == " und " === "?</h2>
+    <br />
+    <p>
+      "==" ist ein Vergleichsoperator, liefert einen booleschen Wert. Bei
+      gleichen Werten ist das Ergebnis der Operation "true", ansonsten "false".
+      Vergleicht man allerdings zwei unterschiedliche Typen, versucht der
+      Operator eine Typumwandlung durchzuführen.
+    </p>
+    <p>
+      Deshalb sollte man "===" verwenden da bei einem solchen Vergleich immer
+      die Operation abgebrochen und der Wert "false" ausgegeben wird.
+    </p>
+    <script>
+      let userName = Robert;
+      let currentYear = 2023;
+      let birthYear = 1974;
+      let age = currentYear - birthYear;
+      console.log(age);
+    </script>
+  </body>
+</html>

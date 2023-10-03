@@ -23,7 +23,7 @@ h1 {
   overflow: auto;
   margin-top: 40px;
   padding-left: 20px;
-  background-color: #f8f8f844;
+  background-color: #f8f8f800;
   height: clamp(1em, 3vm, 1.75em);
 }
 
@@ -166,4 +166,7 @@ summary {
   position: relative;
   line-height: 300%;
   padding-left: 1em;
+}
+summary:hover {
+  cursor: zoom-in;
 }
