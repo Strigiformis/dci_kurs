@@ -1,18 +1,27 @@
 body {
+  background-color: black;
   margin: 0;
   padding: 0;
 }
 
+a {
+}
+
+a:link {
+  color: #7e7e7e;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2em;
+}
 .navbar {
+  width: 100vw;
+  overflow: auto;
   margin-top: 40px;
   padding-left: 20px;
   background-color: #f8f8f841;
-  height: 84px;
-}
-
-.navbar img {
-  width: 150px;
-  padding: 15px;
+  height: clamp(1em, 3vm, 1.75em);
 }
 
 nav ul {
@@ -22,6 +31,7 @@ nav ul {
 }
 
 nav {
+  display: flex;
   float: right;
   margin: 0;
 }
@@ -32,12 +42,11 @@ li {
 }
 
 nav a {
-  padding-top: 15px;
   padding-right: 50px;
   font-weight: 500;
-  font-size: 48px;
+  font-size: clamp(1em, 2.5vw, 1.85em);
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
 }
 
 nav a:visited {
@@ -55,16 +64,12 @@ nav a:hover {
 }
 
 nav a:active {
-  font-weight: bold;
+  text-decoration: underline;
 }
 
-#navbar {
-  display: flexbox;
-  position: sticky;
-}
 ion-icon {
   color: #7e7e7e;
-  font-size: 64px;
+  font-size: clamp(1em, 2.5vw, 1.85em);
   font-weight: 800;
   margin-left: 20px;
   padding-top: 8px;
@@ -130,14 +135,10 @@ ENDE DROPDOWN MENUE !!!!!!!!!!*/
   }
 }
 
-* {
-  font-family: sans-serif;
-}
-
 /*CRT BACKGROUND !!!!!!!!!!*/
 
 #crtbackground {
-  -webkit-filter: brightness(0.2);
+  -webkit-filter: brightness(0.8);
   filter: brightness(0.2);
   width: 100vw;
   height: 100vw;
@@ -148,4 +149,13 @@ ENDE DROPDOWN MENUE !!!!!!!!!!*/
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+video {
+  z-index: -1;
+}
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  font-family: "Audiowide", cursive;
+  font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
 }
