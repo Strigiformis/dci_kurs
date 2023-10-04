@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
-  
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Projekt-Test/css/style.css" />
+    <link rel="stylesheet" href="/Projekt-Robert/css/style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
     </style>
@@ -14,20 +12,20 @@
 
   <body>
     <div class="navbar">
-      <a class="indexlink" href="/Projekt-Test/index.html">
+      <a class="indexlink" href="/Projekt-Robert/index.html">
         <ion-icon name="home-outline"></ion-icon
       ></a>
-      <a href="/matwebdev/aufgaben/form.html">
+      <a href="/Projekt-Robert/form.html">
         <ion-icon name="mail-outline"></ion-icon
       ></a>
       <nav id="navbar">
         <ul>
           <li>
-            <a href="/Projekt-Test/sprachen.html">Programmieren</a>
+            <a href="/Projekt-Robert/basis1.html">Programmieren</a>
           </li>
-          <li><a href="/Projekt-Test/basis2.html">Die Sprachen</a></li>
-          <li><a href="/Projekt-Test/tools.html">Werkzeuge</a></li>
-          <li><a href="/Projekt-Test/impressum.html">Impressum</a></li>
+          <li><a href="/Projekt-Robert/basis2.html">Die Sprachen</a></li>
+          <li><a href="/Projekt-Robert/tools.html">Werkzeuge</a></li>
+          <li><a href="/Projekt-Robert/impressum.html">Impressum</a></li>
           <li></li>
         </ul>
       </nav>
@@ -38,7 +36,6 @@
     <br />
     <div class="formbox">
       <form action="#">
-        
         <label for="vorname">Vorname<sup>*</sup></label>
         <input
           type="text"
@@ -70,13 +67,13 @@
           required
         /><br />
         <span>
-        <input type="checkbox" class="checkbig" name="news" id="news" />
-        <label for="news">Bei Aktualisierung der Seite benachrichtigen?</label
-        ><br /><br />
+          <input type="checkbox" class="checkbig" name="news" id="news" />
+          <label for="news">Bei Aktualisierung der Seite benachrichtigen?</label
+          ><br /><br />
         </span>
-        
+
         <button type="reset">Eingaben zurücksetzen</button><br />
-        
+
         <button type="submit">Senden</button>
       </form>
     </div>
@@ -126,11 +123,8 @@
       }
     </script>
     <script>
-      /* kleine Trennlinie hier kommt noch ein knopf hin*/
-      // Get the button
       let mybutton = document.getElementById("myBtn");
 
-      // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function () {
         scrollFunction();
       };
@@ -146,7 +140,6 @@
         }
       }
 
-      // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;

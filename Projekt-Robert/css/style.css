@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=MuseoModerno&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined:wght@500;600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/vcr-osd-mono");
 * {
-  font-family: "Noto Sans NKo Unjoined", sans-serif;
+  font-family: "VCR OSD Mono", sans-serif;
   font-size: 32px;
   color: rgb(173, 173, 173);
 }
@@ -15,7 +16,6 @@ body {
 
 a {
   font-size: 48px;
-
   color: rgb(173, 173, 173);
 }
 
