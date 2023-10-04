@@ -1,3 +1,8 @@
+* {
+  font-family: "Audiowide", cursive;
+  font-size: 32px;
+  color: rgb(173, 173, 173);
+}
 body {
   background-color: black;
   margin: 0;
@@ -5,32 +10,67 @@ body {
 }
 
 a {
-  color: #a7a7a7dc;
+  font-size: 48px;
+
+  color: rgb(173, 173, 173);
 }
 
 a:link {
-  color: #7e7e7edc;
+  color: rgb(173, 173, 173);
 }
-
+a:hover {
+  color: rgb(111, 0, 255);
+}
 h1 {
   color: rgb(255, 119, 7);
   text-align: center;
   margin-top: 2em;
-  font-size: 45px;
+  font-size: 52px;
+}
+
+p {
+  margin-left: 20px;
+  font-size: 32px;
+}
+
+h2 {
+  margin-left: 10px;
+  color: rgb(255, 119, 7);
+}
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 16px;
+  color: #7a7a7a;
 }
 .navbar {
+  position: sticky;
+  top: 0;
   width: 100vw;
   overflow: auto;
   margin-top: 40px;
   padding-left: 20px;
-  background-color: #f8f8f800;
-  height: clamp(1em, 3vm, 1.75em);
+  background-color: #9b9b9b67;
+  height: fit-content;
+}
+
+.formbox {
+  color: #a7a7a7dc;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+ol img {
+  width: 640px;
+  height: 480px;
+  padding-top: 30px;
 }
 
 nav {
@@ -42,6 +82,7 @@ nav {
 }
 
 li {
+  list-style: none;
   display: inline;
   padding: 15px;
 }
@@ -49,7 +90,7 @@ li {
 nav a {
   padding-right: 50px;
   font-weight: 500;
-  font-size: clamp(1em, 2.5vw, 1.85em);
+  font-size: 48px;
   text-decoration: none;
   display: inline-flex;
 }
@@ -62,10 +103,10 @@ nav a:visited {
   color: rgb(126, 126, 126);
 }
 .indexlink:hover {
-  color: rgb(255, 119, 7);
+  color: rgb(111, 0, 255);
 }
 nav a:hover {
-  color: rgb(255, 119, 7);
+  color: rgb(111, 0, 255);
 }
 
 nav a:active {
@@ -74,20 +115,14 @@ nav a:active {
 
 ion-icon {
   color: #7e7e7e;
-  font-size: clamp(1em, 2.5vw, 1.85em);
-  font-weight: 800;
+  font-size: 48px;
+  font-weight: 900;
   margin-left: 20px;
   padding-top: 8px;
 }
 ion-icon:hover {
-  color: rgb(255, 119, 7);
+  color: rgb(111, 0, 255);
 }
-/* DROPDOWN MENUE !!!!!!!
-
-
-
-
-ENDE DROPDOWN MENUE !!!!!!!!!!*/
 
 @media screen and (max-width: 700px) {
   nav {
@@ -105,10 +140,10 @@ ENDE DROPDOWN MENUE !!!!!!!!!!*/
 /*CRT BACKGROUND !!!!!!!!!!*/
 
 #crtbackground {
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.2);
+  -webkit-filter: brightness(0.3);
+  filter: brightness(0.3);
   width: 100vw;
-  height: 100vw;
+
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -117,56 +152,106 @@ ENDE DROPDOWN MENUE !!!!!!!!!!*/
   bottom: 0;
   z-index: -1;
 }
-video {
-  z-index: -1;
-}
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
-
-* {
-  font-family: "Audiowide", cursive;
-  font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
-}
-
-p {
-  color: #8ae4d8ab;
-  margin-left: 20px;
-}
-
-h2 {
-  margin-left: 10px;
-
-  color: rgb(255, 119, 7);
-}
 
 .textbox {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-details {
+.imagebox {
   display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
-  transition: all 0.5s;
-  border: thick solid #7e7e7e;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.innerimagebox {
+  font-size: 18px;
+  color: #7a7a7a;
+  display: flex;
+  gap: 180px;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  padding-top: 10px;
+  line-height: 80%;
+}
+.innerimagebox > a {
+  color: #62b911;
+}
+.accordion {
+  font-size: 48px;
+  background-color: #00000000;
+  color: rgb(173, 173, 173);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 18px;
+  margin: 10px;
+  width: 70vw;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.6s;
+}
+.active,
+.accordion:hover {
+  background-color: #f8f8f836;
+}
+.panel {
+  line-height: 150%;
+  font-size: 32px;
+  width: 70vw;
+  padding: 0 18px;
+  background-color: rgba(0, 0, 0, 0);
+  display: none;
   overflow: hidden;
-  margin-bottom: 1em;
+}
+.panel > p {
+  color: #62b911;
 }
 
-details[open] {
-  transition: all 1s;
-}
-
-details > div {
-  padding: 1em;
-}
-
-summary {
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #00000000;
+  font-size: 24px;
   color: rgb(255, 119, 7);
-  position: relative;
-  line-height: 300%;
-  padding-left: 1em;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
 }
-summary:hover {
-  cursor: zoom-in;
+
+#myBtn:hover {
+  background-color: #f8f8f836;
 }
+
+input.checkbig {
+  transform: scale(3);
+  margin: 30px;
+}
+input.blackfont {
+  color: #000000;
+}
+textarea {
+  color: #000000;
+}
+button:hover {
+  cursor: pointer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form > span {
+  display: inline;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");

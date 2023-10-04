@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Werkzeuge</title>
+    <link rel="stylesheet" href="/Projekt-Test/css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="indexlink" href="/Projekt-Test/index.html">
+        <ion-icon name="home-outline"></ion-icon
+      ></a>
+      <a href="/matwebdev/aufgaben/form.html">
+        <ion-icon name="mail-outline"></ion-icon
+      ></a>
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a href="/Projekt-Test/sprachen.html">Programmieren</a>
+          </li>
+          <li><a href="/Projekt-Test/basis2.html">Die Sprachen</a></li>
+          <li><a href="/Projekt-Test/tools.html">Werkzeuge</a></li>
+          <li><a href="/Projekt-Test/impressum.html">Impressum</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <h1>Links zu beliebten Editoren für HTML, CSS, USW</h1>
+    <br />
+    <!--    WICHTIG   noch einen weiteren Conatiner erzeugen um bilder und links zu gruppieren!!!   
+    -->
+    <div class="imagebox">
+      <!-- <div class="textbox">   -->
+      <ol>
+        <div class="innerimagebox">
+          <li>
+            <a target="_blank" href="https://code.visualstudio.com/"
+              >Visual Studio Code</a
+            ><br><p>HTML-Editor von Microsoft</p><p>beliebt und weit verbreitet</p><br>
+            <a target="_blank" href="https://code.visualstudio.com/"
+              ><img
+                src="/Projekt-Test/img/visual-studio-code-html-editor-opt.gif"
+                alt="vscode"
+            /></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.blog/2022-06-08-sunsetting-atom/"
+              >Atom</a
+            ><br><p>HTML-Editor Atom von Github</p><p>Vollständig modular aufgebaut
+            </p><a
+              target="_blank"
+              href="https://github.blog/2022-06-08-sunsetting-atom/"
+              ><img
+                src="/Projekt-Test/img/html-editor-atom-opt.png.webp"
+                alt="atom"
+            /></a>
+          </li>
+        </div>
+        <div class="innerimagebox">
+          <li>
+            <a target="_blank" href="http://www.sublimetext.com/"
+              >Sublime Text 3</a
+            ><p>Kommerzieller HTML-Editor</p><p>für Windows, macOS und Linux</p><br>
+            <a href="http://www.sublimetext.com/"
+              ><img
+                src="/Projekt-Test/img/sublime-html-editor-opt.jpg.webp"
+                alt="sublime text 3"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.jetbrains.com/webstorm/"
+              >WebStorm</a
+            ><p>integrierte Entwicklungsumgebung</p><p>spezialisiert auf JavaScript</p><br>
+            <a target="_blank" href="https://www.jetbrains.com/webstorm/"
+              ><img
+                src="/Projekt-Test/img/webstorm-html-editor-opt.png.webp"
+                alt="webstorm"
+              />
+            </a>
+          </li>
+        </div>
+        <div class="innerimagebox">
+          <li>
+            <a target="_blank" href="https://pinegrow.com/">Pinegrow</a
+            ><p>für Mac-, Windows- und Linux</p><p>für WordPress Webseiten</p>
+            <br>
+            <a target="_blank" href="https://pinegrow.com/"
+              ><img
+                src="/Projekt-Test/img/pinegrow-html-editor.jpg.webp"
+                alt="pinegrow"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://developer.android.com/studio"
+              >Android Studio</a
+            ><p>Entwicklungsumgebung für Apps</p><p>kostenlose Alternative</p>
+            <br><a target="_blank" href="https://developer.android.com/studio"
+              ><img
+                src="/Projekt-Test/img/android-studio.png.webp"
+                alt="android studio"
+              />
+            </a>
+          </li>
+        </div>
+        <div class="innerimagebox">
+        <li>
+          <a target="_blank" href="https://webdesigner.withgoogle.com/"
+            >Google Web Designer</a
+          ><br><p>ähnlich wie Adobe Dreamweaver</p><p>kein reiner HTML-Editor</p>
+          <a target="_blank" href="https://webdesigner.withgoogle.com/"
+            ><img
+              src="/Projekt-Test/img/Screenshot (28).png"
+              alt="google webdesigner"
+            />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.lambdatest.com/"
+            >LambdaTest LT Browser</a
+          ><br><p>Entwickler-orientierter Browser</p><p>Test von Ansichtsgrößen</p><a target="_blank" href="https://www.lambdatest.com/"
+            ><img
+              src="/Projekt-Test/img/Screenshot (29).png"
+              alt="lambdatest"
+            />
+          </a>
+        </li>
+      </ol>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      nach oben
+    </button>
+    <!--
+
+-->
+
+    <video
+      autoplay
+      muted
+      loop
+      poster="/uebungen/bilder/vecteezy_television-static-no-signal-old-vintage-tv-noise-on-analog_9296826_787.mp4"
+      id="crtbackground"
+    >
+      <source
+        src="/Projekt-Test/img/technology_-_17076 (720p).mp4"
+      />
+    </video>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script>
+      /* kleine Trennlinie hier kommt noch ein knopf hin*/
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

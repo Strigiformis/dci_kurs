@@ -1,44 +1,156 @@
 <!DOCTYPE html>
 <html lang="de">
+  <!--Uebung zum Thema Formulare und Eingabetypen. Noch ohne Formatierung.-->
 
-<!--Uebung zum Thema Formulare und Eingabetypen. Noch ohne Formatierung.-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Projekt-Test/css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+    </style>
+    <title>Kontakt</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML-Formular</title>
-</head>
+  <body>
+    <div class="navbar">
+      <a class="indexlink" href="/Projekt-Test/index.html">
+        <ion-icon name="home-outline"></ion-icon
+      ></a>
+      <a href="/matwebdev/aufgaben/form.html">
+        <ion-icon name="mail-outline"></ion-icon
+      ></a>
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a href="/Projekt-Test/sprachen.html">Programmieren</a>
+          </li>
+          <li><a href="/Projekt-Test/basis2.html">Die Sprachen</a></li>
+          <li><a href="/Projekt-Test/tools.html">Werkzeuge</a></li>
+          <li><a href="/Projekt-Test/impressum.html">Impressum</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </div>
+    <br />
 
-<body>
-    <h1>Eingabe der Kontaktdaten</h1>
-    <form action="#">
+    <h1>Du möchtest uns etwas mitteilen oder hast eine Frage?</h1>
+    <br />
+    <div class="formbox">
+      <form action="#">
         <!--Das Attribut ´action´ bestimmt die  Adresse, an die der Suchauftrag geschickt werden soll. Hier also noch leer.-->
-        <label for="vorname">Vorname<sup>*</sup></label> <br>
-        <input type="text" name="vorname" id="vorname" required><br>
-        <label for="nachname">Nachname<sup>*</sup></label><br>
-        <input type="text" name="nachname" id="nachname" required><br><br>
-        <label for="nachricht">Ihre Nachricht an uns:</label><br>
-        <textarea name="nachricht" id="nachricht" cols="21" rows="3"></textarea><br><br>
-        <label for="wasserfarbe">Welche Farbe magst du überhaupt nicht?:</label><br>
-        <input type="color" id="wasserfarbe" name="wasserfarbe"><br><br>
-        <label for="anhang">Dateien anhängen:</label>
-        <input type="file" id="anhang" name="datei"><br><br>
-        <label for="email">Email-Adresse:<sup>*</sup></label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="bname">Benutzername:<sup>*</sup></label><br>
-        <input type="text" id="bname" name="bname" required><br><br>
-        <label for="pw">Passwort wählen:<sup>*</sup></label><br>
-        <input type="password" id="pw" name="pw" required><br><br>
-        <input type="checkbox" name="news" id="news" checked>
-        <label for="news">Newsletter-Anmeldung</label><br><br>
-        <input type="button" onclick="alert('Nah. Das hat wohl noch nicht funktioniert. Aber der BUTTON macht immerhin was er soll!')" value="FAQ zur Anmeldung"><br><br>
-        <!--Das Attribut ´reset´löscht alle Eingaben. Versehentliche Benutzung nicht ausgeschlossen.-->
-        <button type="reset">Eingabefelder zurücksetzen</button>
-        <!--Das Attribut ´submit´ überträgt die Daten an den Server und loescht alle im Formular getätigten Eingaben.-->
-        <button type="submit">Absenden</button>
-    </form>
-    <br>
-    <footer>Mit * gekennzeichnete Felder sind Pflichtangaben. Hinweise zur Datenerfassung und die Datenschutzerklärung finden Sie <a href="#">hier.</a> </footer>
-</body>
+        <label for="vorname">Vorname<sup>*</sup></label>
+        <input
+          type="text"
+          class="blackfont"
+          name="vorname"
+          id="vorname"
+          required
+        /><br />
+        <label for="nachname">Nachname<sup>*</sup></label>
+        <input
+          type="text"
+          class="blackfont"
+          name="nachname"
+          id="nachname"
+          required
+        /><br /><br />
+        <label for="nachricht">Deine Nachricht an uns:</label>
+        <textarea name="nachricht" id="nachricht" cols="21" rows="3"></textarea
+        ><br /><br />
 
+        <label for="anhang">Du hast Fragen zu deinem Code?:</label><br />
+        <input type="file" id="anhang" name="datei" /><br /><br />
+        <label for="email">Email-Adresse:<sup>*</sup></label>
+        <input
+          type="email"
+          class="blackfont"
+          id="email"
+          name="email"
+          required
+        /><br />
+        <span>
+        <input type="checkbox" class="checkbig" name="news" id="news" />
+        <label for="news">Bei Aktualisierung der Seite benachrichtigen?</label
+        ><br /><br />
+        </span>
+        <!--Das Attribut ´reset´löscht alle Eingaben. Versehentliche Benutzung nicht ausgeschlossen.-->
+        <button type="reset">Eingaben zurücksetzen</button><br />
+        <!--Das Attribut ´submit´ überträgt die Daten an den Server und loescht alle im Formular getätigten Eingaben.-->
+        <button type="submit">Senden</button>
+      </form>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      nach oben
+    </button>
+    <br />
+    <footer>
+      Mit * gekennzeichnete Felder sind Angaben, die wir von dir benötigen.
+      Hinweise zur Datenerfassung und die Datenschutzerklärung findest du
+      <a href="/Projekt-Test/impressum.html">hier.</a>
+    </footer>
+    <!--
+
+-->
+    <video
+      autoplay
+      muted
+      loop
+      poster="/Projekt-Test/img/achievement-4548538_1280.png"
+      id="crtbackground"
+    >
+      <source src="/Projekt-Test/img/technology_-_17086 (360p).mp4" />
+    </video>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script>
+      /* kleine Trennlinie hier kommt noch ein knopf hin*/
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
 </html>
