@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programmieren</title>
+    <link rel="stylesheet" href="/Projekt-Test/css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="indexlink" href="/Projekt-Test/index.html">
+        <ion-icon name="home-outline"></ion-icon
+      ></a>
+      <a href="/matwebdev/aufgaben/form.html">
+        <ion-icon name="mail-outline"></ion-icon
+      ></a>
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a href="/Projekt-Test/sprachen.html">Programmieren</a>
+          </li>
+          <li><a href="/Projekt-Test/basis2.html">Die Sprachen</a></li>
+          <li><a href="/Projekt-Test/tools.html">Werkzeuge</a></li>
+          <li><a href="/Projekt-Test/impressum.html">Impressum</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <h1>Das solltest du wissen bevor es weitergeht:</h1>
+    <br /><br />
+    <div class="textbox">
+      <button class="accordion">Was ist programmieren?</button>
+      <div class="panel">
+        <p>
+          Beim Programmieren (auf Englisch: Coding) wird eine Computersprache
+          (Code) angewendet, um zum Beispiel Webseiten, Software oder Apps zu
+          programmieren. Der benutzte Code sagt dem Computer, dem Laptop, dem
+          Smartphone, dem Roboter oder der Künstlichen Intelligenz, was zu tun
+          ist. Es gibt allerdings nicht nur eine Programmiersprache, sondern
+          ganz viele – momentan rund 500. Sie hören auf kryptische Namen wie
+          Java, Python, PHC, C++, Ruby oder Javascript. Welche der Sprachen
+          verwendet wird, hängt ganz von der Aufgabe und dem Zweck ab. Ein guter
+          Coder beherrscht im Idealfall mehrere davon.
+        </p>
+      </div>
+
+      <button class="accordion">Seit wann wird programmiert?</button>
+      <div class="panel">
+        <p>
+          Schon ganz schön lange: Bereits 1834 entwarf der englische
+          Mathematiker und Erfinder Charles Babbage die „Analytical Engine“,
+          eine mechanische Rechenmaschine. Sie wurde zwar nie gebaut, gilt aber
+          trotzdem als wichtiger Meilenstein in der Geschichte des Computers.
+          Ada Lovelace, ebenfalls britische Mathematikerin und Babbages
+          Mitarbeiterin, stellte 1841 einen tabellarischen Plan zur Berechnung
+          der Bernoulli-Zahlen auf, der als das erste Programm gilt. Die erste
+          programmgesteuerte Rechenmaschine entwickelte schließlich der deutsche
+          Ingenieur und Erfinder Konrad Zuse im Jahr 1941. Neben dem Z3 geht mit
+          Plankalkül auch die erste höhere Programmiersprache auf sein Konto.
+        </p>
+      </div>
+
+      <button class="accordion">Was passiert denn da jetzt genau?</button>
+      <div class="panel">
+        <p>
+          Wie das mit dem Coding nun ganz konkret funktioniert? Ich versuche es
+          mal so einfach wie möglich zu erklären. Zunächst einmal entwickelt der
+          Programmierer einen Algorithmus, der beschreibt, wie eine Aufgabe
+          Schritt für Schritt gelöst werden kann.
+        </p>
+      </div>
+
+      <button class="accordion">Algorithmus?</button>
+      <div class="panel">
+        <p>
+          Ganz allgemein formuliert ist ein Algorithmus eine Reihe von
+          Anweisungen, die Schritt für Schritt ausgeführt werden, um eine
+          Aufgabe oder ein Problem zu lösen. Wenn du zum Beispiel ein leckeres
+          Pasta-Gericht kochst und genau nach Rezept zuerst die Zwiebeln
+          andünstest, dann den Knoblauch hinzugibst und zuletzt die Tomaten,
+          führst du, vereinfacht gesagt, den Algorithmus der Kochanleitung aus.
+        </p>
+      </div>
+      <button class="accordion">Beispiel gefällig?</button>
+      <div class="panel">
+        <p>
+          Das Navi im Auto berechnet die schnellste oder kürzeste Route zu
+          deinem Ziel – mit Hilfe des programmierten Algorithmus. Wenn du
+          unterwegs an einer Ampel halten musst, hast du auch das einem
+          Algorithmus zu verdanken, der das Schaltverhalten definiert. Besonders
+          oft begegnest du dem Algorithmus auf Google oder anderen
+          Suchmaschinen. Denn wenn du einen Begriff eingibst, zu dem du
+          Informationen brauchst, entscheidet ein sogenannter
+          „PageRank“-Algorithmus darüber, was du zu sehen bekommst. Dieser prüft
+          die Webseiten zuerst nach Kompetenz, Relevanz und Verlinkungsstruktur
+          und sortiert sie dann dementsprechend.
+        </p>
+      </div>
+      <button class="accordion">Und wo kommt der Mensch ins Spiel?</button>
+      <div class="panel">
+        <p>
+          Aufgabe des Programmierers ist es aber nicht nur, diesen Algorithmus
+          zu entwerfen, er muss ihn dann auch in eine Programmiersprache
+          „übersetzen“. Das Problem: Computer verstehen keine Worte, sondern nur
+          die Zahlen 1 (steht für „an“) und 0 (steht für „aus“).
+          Arbeitsanweisungen müssen für ihn also in diesem sogenannten Binärcode
+          (Bi=Zwei) geschrieben werden. Da es eine unendliche Anzahl an
+          verschiedenen Zahlenkombinationen gibt, kommt wieder eine
+          Programmiersprache ins Spiel: Sie macht den Binärcode überschaubar und
+          anwendbar.
+        </p>
+      </div>
+      <button class="accordion">Kleine Begriffskunde</button>
+      <div class="panel"></div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      nach oben
+    </button>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      /* kleine Trennlinie hier kommt noch ein knopf hin*/
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <!--
+
+-->
+    <video
+      autoplay
+      muted
+      loop
+      poster="/uebungen/bilder/vecteezy_television-static-no-signal-old-vintage-tv-noise-on-analog_9296826_787.mp4"
+      id="crtbackground"
+    >
+      <source src="/Projekt-Test/img/source_code_-_4733 (360p).mp4" />
+    </video>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

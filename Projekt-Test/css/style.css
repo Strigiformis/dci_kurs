@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=MuseoModerno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined:wght@500;600&display=swap");
 * {
-  font-family: "Audiowide", cursive;
+  font-family: "Noto Sans NKo Unjoined", sans-serif;
   font-size: 32px;
   color: rgb(173, 173, 173);
 }
@@ -47,12 +51,11 @@ footer {
 .navbar {
   position: sticky;
   top: 0;
-  width: 100vw;
-  overflow: auto;
+  width: 99vw;
   margin-top: 40px;
   padding-left: 20px;
   background-color: #9b9b9b67;
-  height: fit-content;
+  height: 60px;
 }
 
 .formbox {
@@ -251,5 +254,3 @@ form {
 form > span {
   display: inline;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
