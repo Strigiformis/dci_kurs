@@ -137,8 +137,6 @@ ion-icon:hover {
   }
 }
 
-/*CRT BACKGROUND !!!!!!!!!!*/
-
 #crtbackground {
   -webkit-filter: brightness(0.3);
   filter: brightness(0.3);
