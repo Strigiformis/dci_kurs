@@ -122,7 +122,7 @@ ion-icon:hover {
   width: 99vw;
   margin-top: 10px;
   padding-left: 20px;
-  background-color: #fffbabe5;
+  background-color: #fffbabc9;
   height: 60px;
   align-items: center;
 }
@@ -231,16 +231,49 @@ ion-icon:hover {
   outline: none;
   background-color: #00000000;
   font-size: 24px;
-  color: #8aaae5;
+  color: #62b911;
   cursor: pointer;
   padding: 15px;
   border-radius: 5px;
 }
 
 #myBtn:hover {
-  background-color: #f8f8f836;
+  background-color: #5d89dbc0;
 }
 
+.tippen p {
+  font-size: 24px;
+  color: #94c54f;
+  font-family: "Audiowide", sans-serif;
+  overflow: hidden; /* Inhalt bleibt versteckt bis zumn einsetzen des effekts */
+  /* border-right: 0.15em solid #8aaae500;  Cursor Desgin auf transparent  */
+  white-space: nowrap; /* mit der zeile wird es zum einzeiler! */
+  margin: 2 0;
+  letter-spacing: 0.1em; /* bei anderer schriftart evtl ändern! */
+  animation: typing 6s steps(100, end), blink-caret 1s step-end infinite;
+}
+
+/* Schreibmaschine */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Effekt für den Cursor 
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #8aaae500;
+  }
+}
+*/
 input.checkbig {
   transform: scale(3);
   margin: 30px;

@@ -9,7 +9,6 @@
       @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
     </style>
   </head>
-  <body>
     <div class="navbar">
       <a class="indexlink" href="/Projekt-Robert/index.html">
         <ion-icon name="home-outline"></ion-icon
@@ -31,61 +30,83 @@
       </nav>
     </div>
     <br />
-    <!--
+    <div class="tippen">
+    <p>
+      Hey. Schön, dass du bis hierhin gekommen bist.</p>
+    </div><br>
+    <div class="tippen">
+      <p>Mein Name ist Robert und momentan strebe ich eine Fortbildung im Bereich IT an.</p>
+    </div><br>
+    <div class="tippen">
+      <p>Dies ist mein erstes Projekt und zeitgleich Aufgabe des Kurses.</p>
+    </div><br>
+    <div class="tippen">
+      <p>Der Plan ist, diese Webseite laufend mit sinnvollen Inhalten und Designs zu erweitern.</p>
+    </div><br>
+    <div class="tippen">
+        <p>Damit möchte ich den Lernforschritt dokumentieren und mich selber zum üben und austesten animieren.</p></div><br>
+  <div class="tippen">
+        <p>Bislang gibts es noch nicht viel zu erkunden aber da dies ein kontinuierlich wachsendes Projekt ist,</p></div><br>
+              <div class="tippen">
+      <p> kannst du mir gerne eine mail mit Kritik und Anregungen schicken.</p></div>
+
+    
+      <!--
 
 -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      nach oben
-    </button>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        nach oben
+      </button>
 
-    <video autoplay muted loop id="crtbackground">
-      <source src="/Projekt-Test/img/technology_-_17076 (720p).mp4" />
-    </video>
+      <video autoplay muted loop id="crtbackground">
+        <source src="/Projekt-Test/img/technology_-_17076 (720p).mp4" />
+      </video>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
-    <script>
-      let mybutton = document.getElementById("myBtn");
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
         }
-      }
+      </script>
+      <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () {
+          scrollFunction();
+        };
 
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+    </p>
   </body>
 </html>
