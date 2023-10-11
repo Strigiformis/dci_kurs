@@ -56,16 +56,20 @@ footer {
 }
 
 nav ul {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-content: end;
+  align-items: center;
+  word-wrap: break-word;
 }
 
 nav {
+  margin: 0;
   display: flex;
   float: right;
-  margin: 0;
-  align-items: center;
   /*display: flex;
   justify-content: flex-end;
   flex-flow: row wrap;
@@ -75,7 +79,7 @@ nav {
 
 li {
   list-style: none;
-  display: inline;
+
   padding: 15px;
 }
 
@@ -129,6 +133,7 @@ ion-icon:hover {
   background-color: #b9b56ac9;
   height: 60px;
   align-items: center;
+  word-wrap: break-word;
 }
 
 .formbox {
